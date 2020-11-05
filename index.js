@@ -176,7 +176,7 @@ function filterByWord(arreh, stringness){
     let filtArray = [];
     for (let i in arreh){
         if(arreh[i].includes(stringness)){
-            filtArray.push(stringness);
+            filtArray.push(arreh[i]);
         }
         }
         return filtArray;
