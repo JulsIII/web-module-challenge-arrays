@@ -171,15 +171,18 @@ Use the filterByWord function below to do the following:
     DO NOT USE ADVANCED ARRAY METHODS (i.e. .filter) to solve this problem. 
 */
 
-let filtArray = [];
-function filterByWord(originalFlavors, flavors){
-    for (i = 0; i < originalFlavors.length; i++){
-        if (originalFlavors.includes(flavors)){
-            filtArray = originalFlavors.slice(i);
+
+function filterByWord(arreh, stringness){
+    let filtArray = [];
+    for (let i in arreh){
+        if(arreh[i].includes(stringness)){
+            filtArray.push(stringness);
         }
+        }
+        return filtArray;
     }
-    return filtArray;
-}
+    
+    console.log(filterByWord(originalFlavors, "Chocolate"));
 
 /* 💪💪💪💪💪🧁🍦🍨 STRETCH 🍨🍦🍫💪💪💪💪💪*/ 
 
